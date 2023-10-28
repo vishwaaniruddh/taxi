@@ -52,10 +52,10 @@ app.listen(portNumber, () => {
 });
 
 
-const mongoDbURL = 'mongodb+srv://zeon:zeonApp@2021@cluster0.iynj1.mongodb.net/test'
+const mongoDbURL = 'mongodb+srv://amitwohlig:Zoro@9594@cluster0.si5nno7.mongodb.net/'
 const mongoDbLocalURL = 'mongodb://localhost:27017/taxi-back'
 
-const mongoConnection = mongoose.connect( mongoDbLocalURL);
+const mongoConnection = mongoose.connect( mongoDbURL);
 
 mongoConnection.then(dbResponse => {
     console.log(dbResponse, 'connected');
