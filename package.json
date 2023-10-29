@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -w app.js",
-    "start": "nodemon -w app.js",
-    "start:dev": "nodemon -w app.js"
+    "dev": "nodemon index.js",
+    "start": "nodemon index.js",
+    "start:dev": "nodemon -w index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
