@@ -47,7 +47,8 @@ app.use(function(req, res, next) {
 
 
 
-var portNumber  = process.env.PORT || 9000;
+// var portNumber  = process.env.PORT || 9000;
+var portNumber  = 9000;
 app.listen(portNumber, () => {
     console.log(app.settings.env, 'envir');
 });
