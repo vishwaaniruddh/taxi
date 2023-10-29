@@ -9,6 +9,7 @@ var cors = require('cors')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
 var app = express();
 const mongoose = require('mongoose');
 
@@ -52,10 +53,15 @@ app.listen(portNumber, () => {
 });
 
 
-const mongoDbURL = 'mongodb+srv://amitwohlig:Zoro@9594@cluster0.si5nno7.mongodb.net/'
+// const mongoDbURL = 'mongodb+srv://amitwohlig:Zoro@9594@cluster0.si5nno7.mongodb.net/'
+const mongoDbURL = 'mongodb+srv://amitwohlig:Zoro%409594@cluster0.si5nno7.mongodb.net/admin?authSource=admin&replicaSet=atlas-oa4hsi-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true'
+// mongodb+srv://amitwohlig:<password>@cluster0.si5nno7.mongodb.net/
 const mongoDbLocalURL = 'mongodb://localhost:27017/taxi-back'
 
-const mongoConnection = mongoose.connect( mongoDbURL);
+const mongoConnection = mongoose.connect( mongoDbURL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 mongoConnection.then(dbResponse => {
     console.log(dbResponse, 'connected');
