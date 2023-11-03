@@ -5,7 +5,8 @@ var commonMethod = require('../shared/common');
 const bcrypt = require("bcrypt");
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+    let arr = [1,2,3]
+  res.send(arr);
 });
 
 
