@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@lib/base64-vlq": "^0.1.1",
+    "base64-vlq": "^0.0.5",
     "bcrypt": "^5.1.1",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
